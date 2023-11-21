@@ -1,0 +1,51 @@
+/* 1.B change the color of anchor tag */
+
+nav ul li a{
+    color: red;
+}
+
+/* 1.B.b Select the first h2 tag and change the text and background color  */
+nav>h2{
+    color: red;
+    background-color: rgb(163, 147, 147);
+}
+
+/* 1.B.c select the first p tag and changed the text color  */
+ul+p{
+    color: red;
+}
+
+
+/* 1.C.a use the attribute selector with href to select anchor tag and change the color of text and remove underline  */
+a[href]{
+    color: red;
+    text-decoration: none;
+}
+
+/* 1.C.b target the anchor tag with attribute class name "active" and change the color of text and underlining the style */
+a[class="active"]{
+    color: blue;
+    text-decoration: underline;
+}
+
+/* 1.C.c Target the anchor tag with the attribute of the target whose value is “_self” and change the
+background color. */
+a[target="_self"]{
+    background-color: gray;
+}
+
+/* 1.D.a target the last p tag and add "..."  after its value */
+p:last-child::after{
+    content: "...";
+}
+
+/* 1.D.b target the list items bullets and change their color */
+li::marker{
+    color: blue;
+}
+
+/* 1.D.c select the second p tag and select their first letter to change the color and increase the font size */
+p:nth-child(2n)::first-letter{
+    color: red;
+    font-size: 30px;
+}
